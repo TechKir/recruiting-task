@@ -9,9 +9,23 @@
     font-weight: 300;
 }
 
-body{
-    font-size: 16vw;
+html{
+    font-size: 5vw;
     color:#2D3236;
+}
+
+.react-multiple-carousel__arrow {
+    background: rgba(0,0,0,0.1);
+    min-width: 2rem;
+    min-height: 2rem;
+    bottom: 25vw;
+    &:hover{
+        background: rgba(0,0,0,0.1);
+    }
+}
+
+.react-multiple-carousel__arrow::before {
+    color: #28A9E0;
 }
 
 .logoBox{
@@ -48,7 +62,7 @@ body{
     text-align: center;
     padding: 0 2vw 2vw 2vw;
     h2{
-        font-size: 4vw;
+        font-size: 0.8rem;
         margin-top: 4vw
     }
 }
@@ -71,14 +85,24 @@ body{
   }
 
 @media screen and (min-width:464px){
+    .react-multiple-carousel__arrow {
+        min-width: 1rem;
+        min-height: 1rem;
+        bottom: 12vw;
+    }
+
+
     .miniBox{
+        // :first-child{
+        //     margin-left: 5vw;
+        // }
         margin-top: 5vw;
         width: 41vw;
         height: 30vw;
-        font-size: 3vw;
+        font-size: 0.6rem;
         padding: 3vw 2vw;
         p{
-            font-size: 2.5vw;
+            font-size: 0.5rem;
         }
     }
 
@@ -96,11 +120,11 @@ body{
         text-align: center;
         padding: 0 2vw 2vw 2vw;
         h1{
-            font-size: 5vw;
+            font-size: 1rem;
         }
         h2{
-            font-size: 3.5vw;
-            margin-top: 4vw
+            font-size: 0.57rem;
+            margin-top: 4vw;
         }
     }
 
@@ -112,5 +136,42 @@ body{
 }
 
 @media screen and (min-width:1024px){
+    .miniBox{
+        margin: 5vw 1vw 0 2vw;
+        width: 28vw;
+        height: 18vw;
+        font-size: 0.35rem;
+        p{
+            font-size: 0.3rem;
+            margin:0.4rem
+        }
+    }
+    nav {
+        margin-left: 0vw;
+    }
 
+    .headerBox{
+        text-align: center;
+        padding: 0 2vw 0 2vw;
+        h1{
+            font-size: 0.8rem;
+        }
+        h2{
+            font-size: 0.57rem;
+            margin-top: 4vw;
+        }
+        p{
+            font-size: 0.6rem;
+        }
+    }
+
+    .miniBoxContainer{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+
+    .secondContent{
+        padding: 4vw;
+    }
 }
