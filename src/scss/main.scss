@@ -1,0 +1,116 @@
+@import './settings/colors.scss';
+@import './settings/fonts.scss';
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+    font-family: $fontBase;
+    font-weight: 300;
+}
+
+body{
+    font-size: 5vw;
+    color:#2D3236;
+}
+
+.logoBox{
+    padding: 10px;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.firstContent{
+    padding: 7vw;
+    background-color: $primaryColor;
+}
+
+.secondContent{
+    padding: 7vw;
+    background-color: $altColor;
+}
+
+.miniBox{
+    margin:5vw 1vw 0 1vw;
+    width: 84vw;
+    height: 60vw;
+    background-color: white;
+    padding: 7vw 14vw;
+    text-align: center;
+    p{
+        margin: 3vw;
+        color:#808080;
+    }
+}
+
+.headerBox{
+    text-align: center;
+    padding: 0 2vw 2vw 2vw;
+    h2{
+        font-size: 4vw;
+        margin-top: 4vw
+    }
+}
+
+.altColor{
+    color:white
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #FF3859;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -11px;
+    margin-bottom: -12px;
+    z-index: 1;
+  }
+
+@media screen and (min-width:464px){
+    .miniBox{
+        margin-top: 5vw;
+        width: 41vw;
+        height: 30vw;
+        font-size: 3vw;
+        padding: 3vw 2vw;
+        p{
+            font-size: 2.5vw;
+        }
+    }
+
+    .firstContent{
+        padding: 4vw;
+        background-color: $primaryColor;
+    }
+    
+    nav{
+        margin-left: 2vw;
+
+    }
+
+    .headerBox{
+        text-align: center;
+        padding: 0 2vw 2vw 2vw;
+        h1{
+            font-size: 5vw;
+        }
+        h2{
+            font-size: 3.5vw;
+            margin-top: 4vw
+        }
+    }
+
+    .miniBoxContainer{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (min-width:1024px){
+
+}
