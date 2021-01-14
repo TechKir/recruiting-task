@@ -206,7 +206,7 @@ html{
     }
 
     .react-multiple-carousel__arrow--left {
-        left: calc(4% + -5.2vw);
+        left: calc(4% - 5.2vw);
     }
 
     .react-multiple-carousel__arrow::before {
@@ -216,4 +216,89 @@ html{
 
 @media screen and (min-width:1340px){
 
+    
+html{
+    font-size: 40px;
+    color:#2D3236;
+}
+
+.logoBox{
+    padding: 10px;
+    width: 1340px;
+    margin:auto;
+}
+
+.firstContent{
+    padding: 56px;
+}
+
+.secondContent{
+    padding: 56px;
+}
+
+.miniBox{
+    margin:40px 8px 0 8px;
+    width: 270px;
+    height: 225px;
+    padding: 27px;
+    p{
+        margin: 24px;
+    }
+}
+
+.headerBox{
+    padding: 0;
+    h1{
+        margin-bottom: 18px;
+    }
+    h2{
+        margin-top: 32px;
+    }
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    margin-top: -11px;
+    margin-bottom: -12px;
+  }
+
+.react-multiple-carousel__arrow::before {
+    font-size: 25px;
+    }
+
+.react-multi-carousel-list {
+    margin:auto;
+    width: 940px;
+    ul{
+        li{
+            width: 310px !important;
+            height: 225px;
+        }
+    }
+}
+
+.react-multi-carousel-track {
+    margin-left:20px;
+}
+
+.react-multiple-carousel__arrow {
+    bottom: 70px;
+}
+
+.react-multiple-carousel__arrow--left {
+    left: calc(4% - 52px);
+}
+
+.react-multiple-carousel__arrow--right {
+    right: calc(4% - 50px);
+}
+
+.miniBoxContainer {
+    justify-content: center;
+    .miniBox {
+        height: 190px;
+        margin: 40px 30px 0 8px;
+    }
+}
 }
