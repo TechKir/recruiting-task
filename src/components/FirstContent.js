@@ -1,5 +1,4 @@
 /* eslint-disable import/no-anonymous-default-export */
-import FirstHeader from './FirstHeader';
 import CarouselBox from './CarouselBox';
 
 export default () => {
